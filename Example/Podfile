@@ -1,0 +1,6 @@
+use_frameworks!
+target 'DMSLAnalyticsFirebase_Tests' do
+  pod 'DMSLAnalyticsFirebase', :path => '../'
+  
+  
+end
