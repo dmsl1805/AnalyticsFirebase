@@ -21,22 +21,15 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Dmytro Shulzhenko/DMSLAnalyticsFirebase'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/dmsl1805/AnalyticsFirebase'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Dmytro Shulzhenko' => 'dmytro.shulzhenko@gen.tech' }
-  s.source           = { :git => 'https://github.com/Dmytro Shulzhenko/DMSLAnalyticsFirebase.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/dmsl1805/AnalyticsFirebase.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'DMSLAnalyticsFirebase/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'DMSLAnalyticsFirebase' => ['DMSLAnalyticsFirebase/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'DMSLAnalyticsCore'
+  s.dependency 'FirebaseAnalytics'
 end
